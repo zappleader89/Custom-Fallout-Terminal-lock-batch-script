@@ -32,15 +32,6 @@ goto loops
 
 :Repeat
   if %cur% EQU 11 goto bad else goto ask
-if %cur% EQU 1 echo @ @ @ @ @ @ @ @ @
-if %cur% EQU 2 echo @ @ @ @ @ @ @ @
-if %cur% EQU 3 echo @ @ @ @ @ @ @
-if %cur% EQU 4 echo @ @ @ @ @ @
-if %cur% EQU 5 echo @ @ @ @ @
-if %cur% EQU 6 echo @ @ @ @
-if %cur% EQU 8 echo @ @ @
-if %cur% EQU 9 echo @ @
-if %cur% EQU 10 echo @
     set /p guess=Please guess[%left%,%right%]:
     set /a cur=cur+1
     if %guess% EQU %num% (
